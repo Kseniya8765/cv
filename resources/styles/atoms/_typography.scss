@@ -16,43 +16,18 @@
   line-height: 113%;
   letter-spacing: -0.02em;
 
-  // @include media-breakpoint-between(lg, xxxl) {
-  //   @include relativeSize(110);
-  // }
-
   @include media-breakpoint-down(lg) {
     font-size: 50px;
     line-height: 120%;
   }
 }
 
-@mixin headline-2 {
-  @include headline;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-
-  @include media-breakpoint-between(lg, xxxl) {
-    @include relativeSize(60);
-  }
-
-  @include media-breakpoint-down(lg) {
-    font-size: 34px;
-    line-height: 140%;
-  }
-}
-
-@mixin headline-3 {
+@mixin headline-4 {
   @include headline;
   font-family: $font-main;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 146%;
-
-  @include media-breakpoint-between(lg, xxxl) {
-    @include relativeSize(48);
-  }
 
   @include media-breakpoint-down(lg) {
     font-size: 24px;
@@ -65,14 +40,9 @@ h1,
   @include headline-1;
 }
 
-h2,
-.headline-2 {
-  @include headline-2;
-}
-
-h3,
-.headline-3 {
-  @include headline-3;
+h4,
+.headline-4 {
+  @include headline-4;
 }
 
 @mixin caption {
@@ -107,21 +77,6 @@ h3,
   }
 }
 
-@mixin body {
-  font-family: $font-main;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 146%;
-
-  @include media-breakpoint-between(lg, xxxl) {
-    @include relativeSize(34);
-  }
-
-  @include media-breakpoint-down(lg) {
-    font-size: 18px;
-  }
-}
-
 @mixin link {
   font-family: $font-main;
   font-weight: 700;
@@ -135,51 +90,8 @@ h3,
   }
 }
 
-@mixin btn-small {
-  font-family: $font-main;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 146%;
-  text-align: center;
-  letter-spacing: 0.01em;
-
-  @include media-breakpoint-down(lg) {
-    font-size: 16px;
-    line-height: 150%;
-  }
-}
-
-@mixin btn-large {
-  font-family: $font-main;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 105%;
-  letter-spacing: 0.01em;
-
-  @include media-breakpoint-between(lg, xxxl) {
-    @include relativeSize(32);
-  }
-
-  @include media-breakpoint-down(lg) {
-    font-size: 20px;
-    line-height: 105%;
-  }
-}
-
 .body-small {
   @include body-small;
-}
-
-.btn-small {
-  @include btn-small;
-}
-
-.btn-large {
-  @include btn-large;
-}
-
-.body {
-  @include body;
 }
 
 .caption {
