@@ -1,0 +1,10 @@
+.header {
+  &__content {
+    background-color: $dark;
+    padding: 30px 50px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}
