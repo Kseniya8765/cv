@@ -2,4 +2,90 @@
   &__summary {
     margin: 30px 0;
   }
+
+  &__title {
+    &_education {
+      margin-top: 25px;
+    }
+
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $dusty;
+    width: 100%;
+  }
+
+  &__work {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  &__date {
+    flex-shrink: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__organization {
+    color: $dark;
+    text-align: left;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &_courses {
+      margin-top: 15px;
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__right {
+    background-color: $dusty;
+    padding: 20px;
+    height: 100%;
+  }
+
+  &__img {
+    @include aspect-ratio-pseudo(350, 350);
+    max-width: 350px;
+  }
+
+  &__contact-list {
+    list-style-type: none;
+    margin: 30px 0;
+
+    li a {
+      display: inline-block;
+      color: $black;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__skills {
+    margin-left: 20px;
+    margin-top: 20px;
+
+    li {
+      color: $dark;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
