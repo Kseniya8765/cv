@@ -2,6 +2,10 @@
   &__content {
     background-color: $dark;
     padding: 30px 50px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 20px;
+    }
   }
 
   &__title {

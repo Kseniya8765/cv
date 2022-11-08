@@ -17,6 +17,11 @@
   &__work {
     display: flex;
     margin-top: 25px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      margin-top: 5px;
+    }
   }
 
   &__date {
@@ -62,6 +67,10 @@
   &__img {
     @include aspect-ratio-pseudo(350, 350);
     max-width: 350px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 270px;
+    }
   }
 
   &__contact-list {
