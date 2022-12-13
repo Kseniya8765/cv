@@ -47,7 +47,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
   \************************************/
 /***/ (() => {
 
-eval("\n\nwindow.addEventListener('DOMContentLoaded', async () => {\n  window.refs = {\n\n    // accordion: {\n    //   init: () => new Accordion(),\n    //   selectors: ['.accordion__slider'],\n    // },\n  };\n\n  \n\n  Object.keys(window.refs).forEach((ref) => {\n    if (\n      window.refs[ref].hasOwnProperty('init') &&\n      document.querySelectorAll(window.refs[ref].selectors.join(', ')).length >\n        0\n    ) {\n      window.refs[ref].class = window.refs[ref].init();\n    }\n  });\n});\n\n//# sourceURL=webpack://webpack-template/./resources/scripts/index.js?");
+eval("\r\n\r\nwindow.addEventListener('DOMContentLoaded', async () => {\r\n  window.refs = {\r\n\r\n    // accordion: {\r\n    //   init: () => new Accordion(),\r\n    //   selectors: ['.accordion__slider'],\r\n    // },\r\n  };\r\n\r\n  \r\n\r\n  Object.keys(window.refs).forEach((ref) => {\r\n    if (\r\n      window.refs[ref].hasOwnProperty('init') &&\r\n      document.querySelectorAll(window.refs[ref].selectors.join(', ')).length >\r\n        0\r\n    ) {\r\n      window.refs[ref].class = window.refs[ref].init();\r\n    }\r\n  });\r\n});\n\n//# sourceURL=webpack://webpack-template/./resources/scripts/index.js?");
 
 /***/ })
 

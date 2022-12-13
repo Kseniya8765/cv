@@ -6219,7 +6219,7 @@ h1,
 @media (max-width: 991.98px) {
   h1,
 .headline-1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 120%;
   }
 }
@@ -6312,6 +6312,11 @@ a {
   background-color: #1f3a45;
   padding: 30px 50px;
 }
+@media (max-width: 991.98px) {
+  .header__content {
+    padding: 20px;
+  }
+}
 .header__title {
   color: #ffffff;
   margin-bottom: 10px;
@@ -6335,6 +6340,12 @@ a {
 .main-info__work {
   display: flex;
   margin-top: 25px;
+}
+@media (max-width: 991.98px) {
+  .main-info__work {
+    flex-direction: column;
+    margin-top: 5px;
+  }
 }
 .main-info__date {
   flex-shrink: 0;
@@ -6395,6 +6406,11 @@ a {
   content: "";
   width: 100%;
   padding-bottom: 100%;
+}
+@media (max-width: 991.98px) {
+  .main-info__img {
+    max-width: 270px;
+  }
 }
 .main-info__contact-list {
   list-style-type: none;
